@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/height_20px"
+                android:layout_marginTop="@dimen/height_20px"
+                android:src="@mipmap/icon_01" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_20px"
+            android:gravity="center_horizontal"
+            android:text="申请借款金额"
+            android:textColor="@color/text_9999"
+            android:textSize="@dimen/sp_28px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/com_title_height"
+            android:layout_marginLeft="@dimen/height_70px"
+            android:layout_marginRight="@dimen/height_70px"
+            android:layout_marginTop="@dimen/height_30px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pay_500"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner_app"
+                android:gravity="center"
+                android:text="500元"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_36px" />
+
+            <TextView
+                android:id="@+id/pay_1000"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/height_90px"
+                android:layout_weight="1"
+                android:background="@drawable/hollow_round_corner_app"
+                android:gravity="center"
+                android:text="1000元"
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/sp_36px" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_40px"
+            android:gravity="center_horizontal"
+            android:text="请选择借款期限"
+            android:textColor="@color/text_9999"
+            android:textSize="@dimen/sp_28px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/com_title_height"
+            android:layout_marginLeft="@dimen/height_70px"
+            android:layout_marginRight="@dimen/height_70px"
+            android:layout_marginTop="@dimen/height_30px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pay_7day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner_app"
+                android:gravity="center"
+                android:text="7天"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_36px" />
+
+            <TextView
+                android:id="@+id/pay_14day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/height_90px"
+                android:layout_weight="1"
+                android:background="@drawable/hollow_round_corner_app"
+                android:gravity="center"
+                android:text="14天"
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/sp_36px" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_30px"
+            android:gravity="center_horizontal"
+            android:text="请选择优惠券"
+            android:textColor="@color/text_9999"
+            android:textSize="@dimen/sp_28px" />
+
+        <ImageView
+            android:id="@+id/AddCoupons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_20px"
+            android:src="@mipmap/icon_youhui" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/height_20px"
+            android:background="@color/com_line_bg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_marginRight="@dimen/com_left_right"
+            android:layout_marginTop="@dimen/height_20px">
+
+            <TextView
+                android:id="@+id/financePayTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="快速信贷费:"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_28px" />
+
+            <TextView
+                android:id="@+id/financePay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_10px"
+                android:layout_toRightOf="@id/financePayTv"
+                android:text="18元"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_28px" />
+
+            <TextView
+                android:id="@+id/interestPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/height_10px"
+                android:text="1元"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_28px" />
+
+            <TextView
+                android:id="@+id/interestPayTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/interestPay"
+                android:text="息费:"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_28px" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_marginRight="@dimen/com_left_right"
+            android:layout_marginTop="@dimen/height_20px">
+
+            <TextView
+                android:id="@+id/managerPayTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账户管理费:"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_28px" />
+
+            <TextView
+                android:id="@+id/managerPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_10px"
+                android:layout_toRightOf="@id/managerPayTv"
+                android:text="6元"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_28px" />
+
+            <!--优惠券 -->
+            <TextView
+                android:id="@+id/couponsPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/height_10px"
+                android:text="-0元"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_28px" />
+
+            <TextView
+                android:id="@+id/couponsPayTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/couponsPay"
+                android:text="优惠券:"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_28px" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/height_20px"
+            android:background="@color/com_line_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_30px"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/couponsPay"
+                android:text="到期应还:"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_28px" />
+
+            <TextView
+                android:id="@+id/TotalpayMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_10px"
+                android:text="525元"
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/sp_28px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/startBorrowMoney"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/com_title_height"
+            android:layout_marginBottom="@dimen/height_100px"
+            android:layout_marginLeft="@dimen/height_40px"
+            android:layout_marginRight="@dimen/height_40px"
+            android:layout_marginTop="@dimen/height_40px"
+            android:background="@drawable/press_btn_nextstep"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="开始借款"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

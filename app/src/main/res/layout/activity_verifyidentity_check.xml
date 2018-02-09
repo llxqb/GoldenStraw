@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_grey_bg"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.BorrowMoneyCheckActivity">
+
+    <include layout="@layout/item_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/com_left_right"
+        android:layout_marginRight="@dimen/com_left_right"
+        android:layout_marginTop="@dimen/height_30px">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/icon_1s1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_toRightOf="@id/icon"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_144px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Checking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="审核中"
+                    android:textColor="@color/app_grey"
+                    android:textSize="@dimen/sp_34px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_10px"
+                    android:text="预计10分钟告诉您结果"
+                    android:textColor="@color/text_9999"
+                    android:textSize="@dimen/sp_30px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_10px"
+                    android:text="今天1:30"
+                    android:textColor="@color/text_9999"
+                    android:textSize="@dimen/sp_30px"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_144px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Check_confirmCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="确认银行卡"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_34px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_10px"
+                    android:text="请确认银行卡，或更改银行卡"
+                    android:textColor="@color/text_9999"
+                    android:textSize="@dimen/sp_30px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_10px"
+                    android:text="今天1:30"
+                    android:textColor="@color/text_9999"
+                    android:textSize="@dimen/sp_30px"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_144px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Check_IDcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="身份认证"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_34px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_10px"
+                    android:text="确认本人借款，确保资金安全"
+                    android:textColor="@color/text_9999"
+                    android:textSize="@dimen/sp_30px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_10px"
+                    android:text="今天1:30"
+                    android:textColor="@color/text_9999"
+                    android:textSize="@dimen/sp_30px"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_144px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Check_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="签约"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_34px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_10px"
+                    android:text="审核通过后，签约放款，保护您的权益"
+                    android:textColor="@color/text_9999"
+                    android:textSize="@dimen/sp_30px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_10px"
+                    android:text="今天1:30"
+                    android:textColor="@color/text_9999"
+                    android:textSize="@dimen/sp_30px"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_144px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Check_Pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="放款"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_34px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_10px"
+                    android:text="签约完毕，即刻到账"
+                    android:textColor="@color/text_9999"
+                    android:textSize="@dimen/sp_30px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_10px"
+                    android:text="今天1:30"
+                    android:textColor="@color/text_9999"
+                    android:textSize="@dimen/sp_30px"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Check_nextStep"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/height_40px"
+        android:layout_marginRight="@dimen/height_40px"
+        android:layout_marginTop="@dimen/height_30px"
+        android:background="@drawable/round_corner_gray"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_34px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_10px"
+        android:gravity="center"
+        android:text="预计10分钟告诉您结果"
+        android:textColor="@color/text_9999"
+        android:textSize="@dimen/sp_26px" />
+
+    <TextView
+        android:id="@+id/Check_tishi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/com_left_right"
+        android:layout_marginLeft="@dimen/com_left_right"
+        android:layout_marginRight="@dimen/com_left_right"
+        android:gravity="bottom|center"
+        android:text="《防骗提示》"
+        android:textColor="@color/app_grey"
+        android:textSize="@dimen/sp_28px" />
+
+</LinearLayout>

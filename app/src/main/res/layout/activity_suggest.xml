@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.bhxx.goldenstraw.activity.SuggestActivity">
+
+    <include layout="@layout/item_title" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_400px"
+        android:background="@color/white"
+        android:gravity="left"
+        android:hint="您有什么意见或建议，快来告诉我们吧！"
+        android:padding="@dimen/com_left_right"
+        android:textColor="@color/text_6666"
+        android:textColorHint="@color/text_9999"
+        android:textSize="@dimen/sp_30px" />
+
+    <TextView
+        android:id="@+id/suggest_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginBottom="@dimen/height_100px"
+        android:layout_marginLeft="@dimen/height_40px"
+        android:layout_marginRight="@dimen/height_40px"
+        android:layout_marginTop="@dimen/height_40px"
+        android:gravity="center"
+        android:text="提交"
+        android:background="@drawable/press_btn_nextstep"
+        android:textColor="@color/white" />
+</LinearLayout>

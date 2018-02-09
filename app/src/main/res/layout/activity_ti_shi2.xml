@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_grey_bg"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.bhxx.goldenstraw.activity.TiShi2Activity">
+
+    <include layout="@layout/item_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/com_left_right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="甲方：" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金稻草借款中心"
+            android:textColor="@color/app_grey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/com_left_right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="乙方：" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="汪洋琴"
+            android:textColor="@color/app_grey" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心
+        金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心金稻草借款中心"
+        android:padding="@dimen/com_left_right"
+        />
+
+</LinearLayout>

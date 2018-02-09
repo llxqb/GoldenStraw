@@ -1,0 +1,224 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.bhxx.goldenstraw.fragment.VerifyidentityPersoninfoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/com_left_right">
+
+        <TextView
+            android:id="@+id/personinfo_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical|left"
+            android:text="QQ号码"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_30px" />
+
+        <EditText
+            android:id="@+id/personinfo_qq_Et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_marginRight="@dimen/height_50px"
+            android:layout_toRightOf="@id/personinfo_qq"
+            android:background="@null"
+            android:gravity="center|right"
+            android:hint="请填写QQ号码"
+            android:inputType="number"
+            android:textColor="@color/text_9999"
+            android:textColorHint="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/com_left_right">
+
+        <TextView
+            android:id="@+id/personinfo_email"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical|left"
+            android:text="电子邮箱"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_30px" />
+
+        <EditText
+            android:id="@+id/personinfo_email_Et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_marginRight="@dimen/height_50px"
+            android:layout_toRightOf="@id/personinfo_email"
+            android:background="@null"
+            android:gravity="center|right"
+            android:hint="请填写电子邮箱"
+            android:textColor="@color/text_9999"
+            android:textColorHint="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/com_left_right">
+
+        <TextView
+            android:id="@+id/personinfo_hunyin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical|left"
+            android:text="婚姻状态"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_30px" />
+
+        <ImageView
+            android:id="@+id/personinfo_hunyin_nextRightImg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/next_right" />
+
+        <TextView
+            android:id="@+id/personinfo_hunyin_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_toLeftOf="@id/personinfo_hunyin_nextRightImg"
+            android:layout_toRightOf="@id/personinfo_hunyin"
+            android:background="@null"
+            android:gravity="center|right"
+            android:hint="请选择婚姻状态"
+            android:textColor="@color/text_9999"
+            android:textColorHint="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/com_left_right">
+
+        <TextView
+            android:id="@+id/personinfo_xueli"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical|left"
+            android:text="学历"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_30px" />
+
+        <ImageView
+            android:id="@+id/personinfo_xueli_nextRightImg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/next_right" />
+
+        <TextView
+            android:id="@+id/personinfo_xueli_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_toLeftOf="@id/personinfo_xueli_nextRightImg"
+            android:layout_toRightOf="@id/personinfo_xueli"
+            android:background="@null"
+            android:gravity="center|right"
+            android:hint="请选择学历"
+            android:textColor="@color/text_9999"
+            android:textColorHint="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/com_left_right">
+
+        <TextView
+            android:id="@+id/personinfo_address"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical|left"
+            android:text="常住地址"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_30px" />
+
+        <ImageView
+            android:id="@+id/personinfo_address_nextRightImg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/next_right" />
+
+        <TextView
+            android:id="@+id/personinfo_address_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_toLeftOf="@id/personinfo_address_nextRightImg"
+            android:layout_toRightOf="@id/personinfo_address"
+            android:background="@null"
+            android:gravity="center|right"
+            android:hint="请输入常住地址"
+            android:textColor="@color/text_9999"
+            android:textColorHint="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+
+    <TextView
+        android:id="@+id/personinfo_nextStep"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/height_40px"
+        android:layout_marginRight="@dimen/height_40px"
+        android:layout_marginTop="@dimen/height_80px"
+        android:background="@drawable/round_corner_gray"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_34px" />
+</LinearLayout>

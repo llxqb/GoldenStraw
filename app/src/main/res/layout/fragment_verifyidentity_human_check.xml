@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_grey_bg"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.bhxx.goldenstraw.fragment.VerifyidentityHumanCheckFragment">
+
+
+    <ImageView
+        android:id="@+id/verifyIdentity_human_sfz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_40px"
+        android:src="@mipmap/icon_sdpsfz" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫描身份证" />
+
+    <ImageView
+        android:id="@+id/verifyIdentity_human_rlsb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_50px"
+        android:src="@mipmap/icon_rlsb" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人脸识别" />
+
+
+    <TextView
+        android:id="@+id/verifyIdentity_human_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/height_40px"
+        android:layout_marginRight="@dimen/height_40px"
+        android:layout_marginTop="@dimen/height_40px"
+        android:background="@drawable/press_btn_nextstep"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_34px" />
+
+</LinearLayout>

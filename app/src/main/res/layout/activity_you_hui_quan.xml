@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.bhxx.goldenstraw.activity.YouHuiQuanActivity">
+
+    <include layout="@layout/item_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/com_left_right">
+
+        <com.bhxx.goldenstraw.views.CouponsView
+            android:layout_width="@dimen/height_200px"
+            android:layout_height="@dimen/height_200px"
+            android:background="@color/app_grey"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_100px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_30px" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优惠券"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_28px" />
+        </com.bhxx.goldenstraw.views.CouponsView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/com_left_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="借款金额满1000元使用"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_28px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/com_left_right"
+                android:text="新手优惠券"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_26px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/com_left_right"
+                android:text="有效期2016.12.24-2017.2.24"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_26px" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/height_140px"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="去使用"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/sp_30px" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.bhxx.goldenstraw.activity.PayFinishActivity">
+
+    <include layout="@layout/item_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/height_20px"
+        android:layout_marginRight="@dimen/height_20px"
+        android:layout_marginTop="@dimen/height_20px"
+        android:layout_marginBottom="@dimen/height_30px"
+        android:background="@drawable/round_corner_write_6"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_100px"
+            android:gravity="center_horizontal"
+            android:text="支付成功!"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_32px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height_140px"
+            android:layout_marginTop="@dimen/com_left_right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="借款编号："
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_30px" />
+
+            <TextView
+                android:id="@+id/payFinish_bianhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SWHI_6_112936008"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_30px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height_140px"
+            android:layout_marginTop="@dimen/com_left_right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="借款日期："
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_30px" />
+
+            <TextView
+                android:id="@+id/payFinish_startDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016.12.12"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_30px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height_140px"
+            android:layout_marginTop="@dimen/com_left_right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="借款期限："
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_30px" />
+
+            <TextView
+                android:id="@+id/payFinish_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7天"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_30px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height_140px"
+            android:layout_marginTop="@dimen/com_left_right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付时间："
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_30px" />
+
+            <TextView
+                android:id="@+id/payFinish_endDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016.12.18"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_30px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height_140px"
+            android:layout_marginTop="@dimen/com_left_right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="还款金额："
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_30px" />
+
+            <TextView
+                android:id="@+id/payFinish_totalMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="525元"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_30px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/payFinish_next"
+            android:layout_width="@dimen/height_360px"
+            android:layout_height="@dimen/com_title_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_50px"
+            android:background="@drawable/press_btn_nextstep"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="去看看"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_10px"
+            android:layout_marginBottom="@dimen/height_28px"
+            android:text="在个人中心查看我的借款"
+            android:textColor="@color/text_9999" />
+    </LinearLayout>
+</LinearLayout>

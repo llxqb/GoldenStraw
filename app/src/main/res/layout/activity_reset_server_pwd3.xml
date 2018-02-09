@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_grey_bg"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.bhxx.goldenstraw.activity.ResetServerPwd3Activity">
+
+    <include layout="@layout/item_title" />
+
+    <EditText
+        android:id="@+id/resetServerPwd3_newPwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/height_40px"
+        android:layout_marginRight="@dimen/height_40px"
+        android:layout_marginTop="@dimen/height_80px"
+        android:background="@drawable/hollow_round_corner_app"
+        android:gravity="center"
+        android:hint="请输入新密码"
+        android:paddingLeft="@dimen/com_left_right"
+        android:textColor="@color/text_9999"
+        android:textSize="@dimen/sp_28px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:padding="@dimen/height_40px"
+        android:text="1、密码由6位数字组成"
+        android:textColor="@color/text_9999"
+        android:textSize="@dimen/sp_26px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/height_40px"
+        android:paddingRight="@dimen/height_40px"
+        android:text="2、不要使用连续数字、重复数字、您的手机号或证件号的连续6位数"
+        android:textColor="@color/text_9999"
+        android:textSize="@dimen/sp_26px" />
+
+    <TextView
+        android:id="@+id/resetServerPwd3_nextStep"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/height_40px"
+        android:layout_marginRight="@dimen/height_40px"
+        android:layout_marginTop="@dimen/height_80px"
+        android:background="@drawable/round_corner_app"
+        android:gravity="center"
+        android:text="重置密码"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_34px" />
+</LinearLayout>

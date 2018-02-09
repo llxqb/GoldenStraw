@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.bhxx.goldenstraw.activity.VerifyPhoneActivity">
+
+    <include layout="@layout/item_title" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_40px"
+            android:layout_marginTop="@dimen/height_30px"
+            android:src="@mipmap/icon_02" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/com_left_right"
+        android:layout_marginRight="@dimen/com_left_right"
+        android:layout_marginTop="@dimen/height_40px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的手机号："
+            android:textColor="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+
+        <TextView
+            android:id="@+id/verifyPhone_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height_10px"
+            android:text="13874051550"
+            android:textColor="@color/app_grey"
+            android:textSize="@dimen/sp_30px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/com_left_right"
+        android:layout_marginRight="@dimen/com_left_right"
+        android:layout_marginTop="@dimen/height_30px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所属运营商："
+            android:textColor="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+
+        <TextView
+            android:id="@+id/verifyPhone_operator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height_10px"
+            android:text="上海联通"
+            android:textColor="@color/app_grey"
+            android:textSize="@dimen/sp_30px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/height_40px"
+        android:layout_marginRight="@dimen/height_40px"
+        android:layout_marginTop="@dimen/height_80px"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/verifyPhone_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/hollow_round_corner_app_left"
+            android:gravity="center"
+            android:hint="请输入服务密码"
+            android:textColor="@color/text_9999"
+            android:textSize="@dimen/sp_28px" />
+
+        <TextView
+            android:id="@+id/verifyPhone_forgetPwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/round_corner_app_right"
+            android:gravity="center"
+            android:text="忘记密码?"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/verifyPhone_nextStep"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/height_40px"
+        android:layout_marginRight="@dimen/height_40px"
+        android:layout_marginTop="@dimen/height_80px"
+        android:background="@drawable/press_btn_nextstep"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_34px" />
+
+    <TextView
+        android:id="@+id/verifyPhone_xieyi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/height_40px"
+        android:layout_marginRight="@dimen/height_40px"
+        android:layout_marginTop="@dimen/height_20px"
+        android:gravity="right"
+        android:text="《借款服务于隐私协议》"
+        android:textColor="@color/app_grey"
+        android:textSize="@dimen/sp_26px" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_round_corner_white"
+    android:orientation="vertical">
+
+    <!--dialog样式3：顶部文字  集合 + 底部按钮（或有或无）-->
+
+    <TextView
+        android:id="@+id/dialog_style3_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_100px"
+        android:background="@drawable/dialog_round_corner_app_top"
+        android:gravity="center"
+        android:text="职业"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_40px" />
+
+    <ListView
+        android:id="@+id/dialog_style3_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/com_line_bg"
+        android:dividerHeight="0.5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_100px"
+        android:gravity="center"
+        android:text="我知道了"
+        android:textColor="@color/app_grey"
+        android:visibility="gone"
+        android:textSize="@dimen/sp_36px" />
+</LinearLayout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:fitsSystemWindows="true"
+    tools:context="com.bhxx.goldenstraw.activity.PayWayBankActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_title" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/com_title_height"
+            android:background="@color/app_grey">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="快捷支付"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_34px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/com_left_right"
+                android:src="@mipmap/icon_prowhite" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/com_left_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金稻草还款"
+                android:textColor="@color/text_6666"
+                android:textSize="@dimen/sp_30px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="￥525"
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/sp_30px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/com_left_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收款账户："
+                android:textColor="@color/text_6666"
+                android:textSize="@dimen/sp_30px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_10px"
+                android:gravity="left"
+                android:text="上海***有限公司"
+                android:textSize="@dimen/sp_30px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/com_left_right"
+                android:background="@color/com_line_bg" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40px"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/height_30px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="卡号："
+                android:textColor="@color/text_6666"
+                android:textSize="@dimen/sp_30px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_10px"
+                android:gravity="left"
+                android:text="6212261***2564"
+                android:textSize="@dimen/sp_30px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/height_30px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名："
+                android:textColor="@color/text_6666"
+                android:textSize="@dimen/sp_30px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_10px"
+                android:gravity="left"
+                android:text="**琴"
+                android:textSize="@dimen/sp_30px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/height_30px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号："
+                android:textColor="@color/text_6666"
+                android:textSize="@dimen/sp_30px" />
+
+            <EditText
+                android:id="@+id/pay_bank_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_10px"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="请输入银行预留手机号"
+                android:textColorHint="@color/text_9999"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_30px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_30px"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验证码："
+                android:textColor="@color/text_6666"
+                android:textSize="@dimen/sp_30px" />
+
+            <EditText
+                android:id="@+id/pay_bank_verifyEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_10px"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="请输入验证码"
+                android:textColorHint="@color/text_9999"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_30px" />
+
+            <com.bhxx.goldenstraw.views.TimeButton
+                android:id="@+id/code_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:text="获取验证码"
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/sp_30px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/height_30px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="同意"
+                android:textSize="@dimen/sp_30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_10px"
+                android:text="《支付服务协议》"
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/sp_30px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/com_left_right">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_10px"
+                android:text="添加为常用卡"
+                android:textSize="@dimen/sp_30px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/payWay_surePay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/com_title_height"
+            android:layout_marginBottom="@dimen/height_100px"
+            android:layout_marginLeft="@dimen/height_40px"
+            android:layout_marginRight="@dimen/height_40px"
+            android:layout_marginTop="@dimen/height_40px"
+            android:background="@drawable/press_btn_nextstep"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="确认支付"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</ScrollView>

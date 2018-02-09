@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.bhxx.goldenstraw.activity.HelpActivity">
+
+    <include layout="@layout/item_title" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_260px"
+        android:background="@mipmap/icon_grzxbg">
+
+        <!-- android:src="@mipmap/icon_touxiang" -->
+        <com.bhxx.goldenstraw.views.CircleImageView
+            android:id="@+id/help_avatar"
+            android:layout_width="@dimen/height_160px"
+            android:layout_height="@dimen/height_160px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:src="@mipmap/icon_kefu" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_toRightOf="@id/help_avatar">
+
+            <TextView
+                android:id="@+id/help_chatKF"
+                android:layout_width="@dimen/height_210px"
+                android:layout_height="@dimen/height_70px"
+                android:background="@drawable/round_corner_write_6"
+                android:gravity="center"
+                android:text="联系客服"
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/sp_36px" />
+
+            <TextView
+                android:id="@+id/personalCenter_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/help_chatKF"
+                android:layout_marginTop="@dimen/com_left_right"
+                android:text="问题还没有解决？联系客服问问吧！"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_28px" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/height_30px"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_160px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/help_cjwt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/press_btn_gray"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_wt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20px"
+                    android:text="常见问题" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/help_jkxg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/press_btn_gray"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_jk" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20px"
+                    android:text="借款相关" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/help_hkxg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/press_btn_gray"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_hk" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20px"
+                    android:text="还款相关" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_160px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/help_fkxg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/press_btn_gray"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_fk" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20px"
+                    android:text="放款相关" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/help_fyxg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/press_btn_gray"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_fy" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20px"
+                    android:text="费用相关" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/help_shxg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/press_btn_gray"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_xg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20px"
+                    android:text="审核相关" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_160px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/help_zhyys"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/press_btn_gray"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_ys" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20px"
+                    android:text="账户与隐私" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

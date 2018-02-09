@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_grey_bg"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.bhxx.goldenstraw.activity.WeiXinVerifyActivity">
+
+    <include layout="@layout/item_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_400px"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/height_30px">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_weixinbig" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_20px"
+            android:text="微信认证"
+            android:textSize="@dimen/sp_30px" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_40px"
+        android:text="关注金稻草微信"
+        android:textColor="@color/text_6666"
+        android:textSize="@dimen/sp_34px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sp_30px"
+        android:text="公众号：jindaocao"
+        android:textColor="@color/app_grey"
+        android:textSize="@dimen/sp_30px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sp_20px"
+        android:text="微信扫一扫"
+        android:textSize="@dimen/sp_30px" />
+
+</LinearLayout>

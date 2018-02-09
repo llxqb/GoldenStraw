@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.bhxx.goldenstraw.activity.ChangePhoneActivity">
+
+    <include layout="@layout/item_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/height_30px">
+
+        <TextView
+            android:layout_width="@dimen/height_200px"
+            android:layout_height="wrap_content"
+            android:text="原手机号"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_32px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:text="13262253731"
+            android:textColor="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/height_200px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height_30px"
+            android:text="验证码"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_32px" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:textColor="@color/text_9999"
+            android:textColorHint="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+
+        <com.bhxx.goldenstraw.views.TimeButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:background="@null"
+            android:text="获取验证码"
+            android:textColor="@color/app_grey"
+            android:textSize="@dimen/sp_30px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/height_30px">
+
+        <TextView
+            android:layout_width="@dimen/height_200px"
+            android:layout_height="wrap_content"
+            android:text="新手机号"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_32px" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:background="@null"
+            android:hint="请输入新的手机号码"
+            android:textColor="@color/text_9999"
+            android:textColorHint="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/height_30px">
+
+        <TextView
+            android:layout_width="@dimen/height_200px"
+            android:layout_height="wrap_content"
+            android:text="验证码"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_32px" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:textColor="@color/text_9999"
+            android:textColorHint="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+
+        <com.bhxx.goldenstraw.views.TimeButton
+            android:id="@+id/code_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:background="@null"
+            android:text="获取验证码"
+            android:textColor="@color/app_grey"
+            android:textSize="@dimen/sp_30px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <TextView
+        android:id="@+id/changePhone_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginBottom="@dimen/height_100px"
+        android:layout_marginLeft="@dimen/height_40px"
+        android:layout_marginRight="@dimen/height_40px"
+        android:layout_marginTop="@dimen/height_40px"
+        android:gravity="center"
+        android:text="确认更换"
+        android:background="@drawable/press_btn_nextstep"
+        android:textColor="@color/white" />
+</LinearLayout>

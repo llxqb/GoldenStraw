@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.bhxx.goldenstraw.activity.ResetServerPwd2Activity">
+
+    <include layout="@layout/item_title" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/height_40px"
+        android:layout_marginRight="@dimen/height_40px"
+        android:layout_marginTop="@dimen/height_80px">
+
+        <TextView
+            android:id="@+id/resetServerPwd2_verify"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round_corner_app_right"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_28px" />
+
+        <EditText
+            android:id="@+id/resetServerPwd2_verifyEt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/resetServerPwd2_verify"
+            android:background="@drawable/hollow_round_corner_app_left"
+            android:gravity="center"
+            android:hint="请输入图片中的验证码"
+            android:paddingLeft="@dimen/com_left_right"
+            android:textColor="@color/text_9999"
+            android:textSize="@dimen/sp_28px" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/resetServerPwd2_nextStep"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/height_40px"
+        android:layout_marginRight="@dimen/height_40px"
+        android:layout_marginTop="@dimen/height_80px"
+        android:background="@drawable/round_corner_app"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_34px" />
+</LinearLayout>

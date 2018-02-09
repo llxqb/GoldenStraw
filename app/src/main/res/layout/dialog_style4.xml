@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_round_corner_white"
+    android:orientation="vertical">
+
+    <!--dialog样式4：标题  文字  底部按钮 -->
+
+    <TextView
+        android:id="@+id/dialog_style4_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_50px"
+        android:gravity="center_horizontal"
+        android:text="验证提示"
+        android:textColor="@color/text_3333"
+        android:textSize="@dimen/sp_36px" />
+
+    <TextView
+        android:id="@+id/dialog_style4_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/height_40px"
+        android:layout_marginRight="@dimen/height_40px"
+        android:layout_marginTop="@dimen/height_50px"
+        android:gravity="center_horizontal|left"
+        android:text="验证内容  验证内容  验证内容  验证内容  验证内容  验证内容  验证内容
+          验证内容  验证内容  验证内容  验证内容  验证内容  验证内容"
+        android:textColor="@color/text_9999"
+        android:textSize="@dimen/sp_26px" />
+
+    <TextView
+        android:id="@+id/dialog_style4_buttonTv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_100px"
+        android:layout_marginTop="@dimen/height_70px"
+        android:background="@drawable/dialog_round_corner_app_buttom"
+        android:gravity="center"
+        android:text="我知道了"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_40px" />
+</LinearLayout>

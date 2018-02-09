@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_round_corner_white"
+    android:orientation="vertical">
+
+    <!-- 支付宝还款 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_100px"
+        android:background="@drawable/dialog_round_corner_app_top"
+        android:gravity="center"
+        android:text="支付宝还款"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_40px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/com_left_right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="官方账户"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_30px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="zhifubao@jindaocao.com"
+            android:textColor="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/com_left_right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转账金额"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_30px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="525元"
+            android:textColor="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/com_left_right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转账备注"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_30px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="汪洋琴123456789"
+            android:textColor="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+
+
+    <TextView
+        android:id="@+id/dialogStyle5_zfb_isIKnow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_100px"
+        android:background="@drawable/press_btn_gray"
+        android:gravity="center"
+        android:text="我知道了"
+        android:textColor="@color/app_grey"
+        android:textSize="@dimen/sp_36px" />
+</LinearLayout>

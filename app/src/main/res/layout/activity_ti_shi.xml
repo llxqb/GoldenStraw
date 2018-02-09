@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_grey_bg"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.bhxx.goldenstraw.activity.TiShiActivity">
+
+    <include layout="@layout/item_title" />
+
+    <TextView
+        android:id="@+id/tishiText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/com_left_right"
+        android:textSize="@dimen/sp_30px" />
+
+</LinearLayout>

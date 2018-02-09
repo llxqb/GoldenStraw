@@ -1,0 +1,238 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_grey_bg"
+    android:orientation="vertical"
+    tools:context="com.bhxx.goldenstraw.fragment.VerifyidentityHumanCheckFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/com_left_right"
+            android:text="请选择借款期限"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_30px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/com_title_height"
+            android:layout_marginLeft="@dimen/height_70px"
+            android:layout_marginRight="@dimen/height_70px"
+            android:layout_marginTop="@dimen/height_30px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/xuqi_7day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner_app"
+                android:gravity="center"
+                android:text="7天"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_36px" />
+
+            <TextView
+                android:id="@+id/xuqi_14day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/height_90px"
+                android:layout_weight="1"
+                android:background="@drawable/hollow_round_corner_app"
+                android:gravity="center"
+                android:text="14天"
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/sp_36px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/height_40px"
+            android:background="@color/com_line_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/com_left_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="续期还款日"
+                android:textColor="@color/text_6666"
+                android:textSize="@dimen/sp_30px" />
+
+            <TextView
+                android:id="@+id/xuqi_endDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="2016.12.26"
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/sp_30px" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/com_left_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到期应还"
+                android:textColor="@color/text_6666"
+                android:textSize="@dimen/sp_30px" />
+
+            <TextView
+                android:id="@+id/xuqi_totalMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="525元"
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/sp_30px" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40px"
+            android:background="@color/gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_30px"
+            android:layout_marginTop="@dimen/height_30px"
+            android:text="续期费用"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_30px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/com_left_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本期息费"
+                android:textColor="@color/text_6666"
+                android:textSize="@dimen/sp_30px" />
+
+            <TextView
+                android:id="@+id/xuqi_xifei"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="25元"
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/sp_30px" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/com_left_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="续期服务费"
+                android:textColor="@color/text_6666"
+                android:textSize="@dimen/sp_30px" />
+
+            <TextView
+                android:id="@+id/xuqi_fuwufei"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="20元"
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/sp_30px" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/com_left_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总共应扣"
+                android:textColor="@color/text_6666"
+                android:textSize="@dimen/sp_30px" />
+
+            <TextView
+                android:id="@+id/xuqi_totalMoney_fei"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="45元"
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/sp_30px" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+
+        <TextView
+            android:id="@+id/xuqi_startXuQi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/com_title_height"
+            android:layout_marginBottom="@dimen/height_40px"
+            android:layout_marginLeft="@dimen/height_40px"
+            android:layout_marginRight="@dimen/height_40px"
+            android:layout_marginTop="@dimen/height_30px"
+            android:background="@drawable/press_btn_nextstep"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="现在续期"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</ScrollView>

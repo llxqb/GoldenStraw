@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_grey_bg"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.bhxx.goldenstraw.activity.VerifyCardActivity">
+
+    <include layout="@layout/item_title" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:padding="@dimen/com_left_right">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="@dimen/height_200px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="开户行"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_30px" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/next_right" />
+
+        <TextView
+            android:id="@+id/verifyCardBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_marginRight="@dimen/com_left_right"
+            android:layout_toLeftOf="@id/img1"
+            android:layout_toRightOf="@id/tv1"
+            android:hint="请选择开户行"
+            android:textColor="@color/text_9999"
+            android:textColorHint="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:padding="@dimen/com_left_right">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="@dimen/height_200px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="开户省市"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_30px" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/next_right" />
+
+        <TextView
+            android:id="@+id/verifyCardSheng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_marginRight="@dimen/com_left_right"
+            android:layout_toLeftOf="@id/img2"
+            android:layout_toRightOf="@id/tv2"
+            android:hint="请选择开省市"
+            android:textColor="@color/text_9999"
+            android:textColorHint="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:padding="@dimen/com_left_right">
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="@dimen/height_200px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="预留手机号"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_30px" />
+
+        <TextView
+            android:id="@+id/verifyCardPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_marginRight="@dimen/com_left_right"
+            android:layout_toRightOf="@id/tv3"
+            android:hint="13122530292"
+            android:textColor="@color/text_9999"
+            android:textColorHint="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:padding="@dimen/com_left_right">
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="@dimen/height_200px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="银行卡号"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_30px" />
+
+
+        <EditText
+            android:id="@+id/verifyCardCardNumEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_marginRight="@dimen/com_left_right"
+            android:layout_toRightOf="@id/tv4"
+            android:background="@null"
+            android:hint="本人名下借记卡"
+            android:textColor="@color/text_9999"
+            android:textColorHint="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <TextView
+        android:id="@+id/verifyCard_nextStep"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/height_40px"
+        android:layout_marginRight="@dimen/height_40px"
+        android:layout_marginTop="@dimen/height_60px"
+        android:background="@drawable/round_corner_app"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_34px" />
+</LinearLayout>

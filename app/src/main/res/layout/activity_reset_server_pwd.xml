@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.bhxx.goldenstraw.activity.ResetServerPwdActivity">
+
+    <include layout="@layout/item_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/height_40px"
+        android:layout_marginRight="@dimen/height_40px"
+        android:layout_marginTop="@dimen/height_80px">
+
+        <ImageView
+            android:id="@+id/resetServerPwd_verifyImg"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/hollow_round_corner_app_right"
+            />
+
+        <EditText
+            android:id="@+id/resetServerPwd_verifyEt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/resetServerPwd_verifyImg"
+            android:background="@drawable/hollow_round_corner_app_left"
+            android:gravity="center"
+            android:hint="请输入图片中的验证码"
+            android:textColor="@color/text_9999"
+            android:textSize="@dimen/sp_28px" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/resetServerPwd_changeVerify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/height_40px"
+        android:layout_marginRight="@dimen/height_100px"
+        android:layout_marginTop="@dimen/height_10px"
+        android:gravity="right"
+        android:text="换一张"
+        android:textColor="@color/text_9999"
+        android:textSize="@dimen/sp_28px" />
+
+    <TextView
+        android:id="@+id/resetServerPwd_nextStep"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/height_40px"
+        android:layout_marginRight="@dimen/height_40px"
+        android:layout_marginTop="@dimen/height_40px"
+        android:background="@drawable/round_corner_app"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_34px" />
+
+</LinearLayout>

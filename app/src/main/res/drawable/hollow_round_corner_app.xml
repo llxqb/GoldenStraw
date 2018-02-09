@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--空心圆 白颜色 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <corners android:radius="40dp" />
+    <stroke
+        android:width="1px"
+        android:color="@color/app_grey" />
+</shape>

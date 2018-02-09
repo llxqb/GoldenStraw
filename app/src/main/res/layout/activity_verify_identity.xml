@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.bhxx.goldenstraw.activity.VerifyIdentityActivity">
+
+    <include layout="@layout/item_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_40px"
+            android:layout_marginTop="@dimen/height_30px"
+            android:src="@mipmap/icon_03" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/com_left_right"
+        android:layout_marginRight="@dimen/com_left_right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/height_100px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="姓名"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_30px" />
+
+        <EditText
+            android:id="@+id/verifyIdentity_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="请填写真实姓名"
+            android:textColor="@color/text_9999"
+            android:textColorHint="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/com_left_right"
+        android:layout_marginRight="@dimen/com_left_right"
+        android:background="@color/com_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/com_left_right"
+        android:layout_marginRight="@dimen/com_left_right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/height_100px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="身份证"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_30px" />
+
+        <EditText
+            android:id="@+id/verifyIdentity_identity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="请填写身份证号码"
+            android:textColor="@color/text_9999"
+            android:textColorHint="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/com_left_right"
+        android:layout_marginRight="@dimen/com_left_right"
+        android:background="@color/com_line_bg" />
+
+
+    <TextView
+        android:id="@+id/verifyIdentity_nextStep"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/height_40px"
+        android:layout_marginRight="@dimen/height_40px"
+        android:layout_marginTop="@dimen/height_80px"
+        android:background="@drawable/press_btn_nextstep"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_34px" />
+</LinearLayout>

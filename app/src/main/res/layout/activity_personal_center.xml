@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:fitsSystemWindows="true"
+    tools:context="com.bhxx.goldenstraw.activity.PersonalCenterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_title" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_260px"
+            android:background="@mipmap/icon_grzxbg">
+
+            <!-- android:src="@mipmap/icon_touxiang" -->
+            <com.bhxx.goldenstraw.views.CircleImageView2
+                android:id="@+id/personalCenter_avatar"
+                android:layout_width="@dimen/height_160px"
+                android:layout_height="@dimen/height_160px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:src="@mipmap/icon_touxiang" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:layout_toRightOf="@id/personalCenter_avatar">
+
+                <TextView
+                    android:id="@+id/personalCenter_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="131****0292"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_36px" />
+
+                <TextView
+                    android:id="@+id/personalCenter_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/personalCenter_phone"
+                    android:layout_marginTop="@dimen/com_left_right"
+                    android:text="汪洋琴"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_30px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/personalCenter_phone"
+                    android:layout_marginLeft="@dimen/height_10px"
+                    android:layout_marginTop="@dimen/com_left_right"
+                    android:layout_toRightOf="@id/personalCenter_name"
+                    android:background="@color/yellow"
+                    android:text="已认证"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_30px" />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/com_left_right"
+                android:padding="@dimen/com_left_right"
+                android:src="@mipmap/icon_bigfanhui" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_131px"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/personalCenter_sqjk"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/press_btn_gray"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1笔"
+                    android:textColor="@color/app_grey"
+                    android:textSize="@dimen/sp_34px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_10px"
+                    android:text="申请借款"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_26px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/personalCenter_xhjk"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/press_btn_gray"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0笔"
+                    android:textColor="@color/app_grey"
+                    android:textSize="@dimen/sp_34px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_10px"
+                    android:text="需还借款"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_26px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/personalCenter_yhq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/press_btn_gray"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2笔"
+                    android:textColor="@color/app_grey"
+                    android:textSize="@dimen/sp_34px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_10px"
+                    android:text="优惠券"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_26px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/height_20px"
+            android:background="@color/com_line_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/personalCenter_renzheng_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/height_30px">
+
+                <ImageView
+                    android:id="@+id/personalCenter_renzheng_Img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_mycer" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/com_left_right"
+                    android:layout_toRightOf="@id/personalCenter_renzheng_Img"
+                    android:text="我的认证"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_30px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/next_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/com_line_bg" />
+
+            <RelativeLayout
+                android:id="@+id/personalCenter_changePhone_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/height_30px">
+
+                <ImageView
+                    android:id="@+id/personalCenter_changePhone_Img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_phonenum" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/com_left_right"
+                    android:layout_toRightOf="@id/personalCenter_changePhone_Img"
+                    android:text="更换手机号"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_30px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/next_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/com_line_bg" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_20px"
+                android:background="@color/gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/com_line_bg" />
+
+            <RelativeLayout
+                android:id="@+id/personalCenter_help_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/height_30px">
+
+                <ImageView
+                    android:id="@+id/personalCenter_help_Img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_help" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/com_left_right"
+                    android:layout_toRightOf="@id/personalCenter_help_Img"
+                    android:text="帮助"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_30px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/next_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/com_line_bg" />
+
+            <RelativeLayout
+                android:id="@+id/personalCenter_action_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/height_30px">
+
+                <ImageView
+                    android:id="@+id/personalCenter_action_Img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_activ" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/com_left_right"
+                    android:layout_toRightOf="@id/personalCenter_action_Img"
+                    android:text="活动中心"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_30px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/next_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/com_line_bg" />
+
+            <RelativeLayout
+                android:id="@+id/personalCenter_share_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/height_30px">
+
+                <ImageView
+                    android:id="@+id/personalCenter_share_Img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_share" />
+
+                <TextView
+                    android:id="@+id/personalCenter_share_Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/com_left_right"
+                    android:layout_toRightOf="@id/personalCenter_share_Img"
+                    android:text="邀请好友"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_30px" />
+
+                <TextView
+                    android:layout_width="@dimen/height_80px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/personalCenter_share_Tv"
+                    android:background="@drawable/round_corner_app"
+                    android:gravity="center"
+                    android:text="福利"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_28px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/next_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/com_line_bg" />
+
+            <RelativeLayout
+                android:id="@+id/personalCenter_fankui_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/height_30px">
+
+                <ImageView
+                    android:id="@+id/personalCenter_fankui_Img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_feedback" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/com_left_right"
+                    android:layout_toRightOf="@id/personalCenter_fankui_Img"
+                    android:text="意见反馈"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_30px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/next_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/com_line_bg" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_20px"
+                android:background="@color/gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/com_line_bg" />
+
+            <RelativeLayout
+                android:id="@+id/personalCenter_exit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/height_30px">
+
+                <ImageView
+                    android:id="@+id/personalCenter_exit_Img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_exit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/com_left_right"
+                    android:layout_toRightOf="@id/personalCenter_exit_Img"
+                    android:text="退出登录"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_30px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/next_right" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

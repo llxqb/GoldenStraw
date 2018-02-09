@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_round_corner_white"
+    android:orientation="vertical">
+
+    <!--dialog样式3：顶部文字  文字 + 底部按钮（或有或无）  -->
+    <!-- 借款详情 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_100px"
+        android:background="@drawable/dialog_round_corner_app_top"
+        android:gravity="center"
+        android:text="借款详情"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_40px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/com_left_right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="借款金额"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_30px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="18元"
+            android:textColor="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/com_left_right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="借款期限"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_30px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="6元"
+            android:textColor="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/com_left_right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还款日"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_30px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="2016.12.18"
+            android:textColor="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/com_left_right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快速信贷费"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_30px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="15元"
+            android:textColor="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/com_left_right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户管理费"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_30px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="6元"
+            android:textColor="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/com_left_right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="息费"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_30px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="6元"
+            android:textColor="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/com_left_right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠券减免"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_30px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="-6元"
+            android:textColor="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <TextView
+        android:id="@+id/dialogStyle5_2_isIKnow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_100px"
+        android:background="@drawable/press_btn_gray"
+        android:gravity="center"
+        android:text="我知道了"
+        android:textColor="@color/app_grey"
+        android:textSize="@dimen/sp_36px" />
+</LinearLayout>

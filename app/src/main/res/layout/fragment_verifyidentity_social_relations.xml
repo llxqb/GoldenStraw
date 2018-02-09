@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_grey_bg"
+    android:orientation="vertical"
+    tools:context="com.bhxx.goldenstraw.fragment.VerifyidentitySocialRelationsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/com_left_right">
+
+        <TextView
+            android:id="@+id/socialRelations_qinshu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical|left"
+            android:text="亲属关系"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_30px" />
+
+        <ImageView
+            android:id="@+id/socialRelations_qinshu_nextRightImg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/next_right" />
+
+        <TextView
+            android:id="@+id/socialRelations_qinshu_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_toLeftOf="@id/socialRelations_qinshu_nextRightImg"
+            android:layout_toRightOf="@id/socialRelations_qinshu"
+            android:background="@null"
+            android:gravity="center|right"
+            android:hint="请选择亲属关系"
+            android:textColor="@color/text_9999"
+            android:textColorHint="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/com_left_right">
+
+        <TextView
+            android:id="@+id/socialRelations_qinshuPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical|left"
+            android:text="联系电话"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_30px" />
+
+        <ImageView
+            android:id="@+id/socialRelations_qinshuPhone_nextRightImg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/icon_dianhua" />
+
+        <EditText
+            android:id="@+id/socialRelations_qinshuPhone_Et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_toLeftOf="@id/socialRelations_qinshuPhone_nextRightImg"
+            android:layout_toRightOf="@id/socialRelations_qinshuPhone"
+            android:background="@null"
+            android:gravity="center|right"
+            android:hint="亲属联系人手机号码"
+            android:textColor="@color/text_9999"
+            android:textColorHint="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/com_left_right">
+
+        <TextView
+            android:id="@+id/socialRelations_shehui"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical|left"
+            android:text="社会关系"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_30px" />
+
+        <ImageView
+            android:id="@+id/socialRelations_shehui_nextRightImg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/next_right" />
+
+        <TextView
+            android:id="@+id/socialRelations_shehui_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_toLeftOf="@id/socialRelations_shehui_nextRightImg"
+            android:layout_toRightOf="@id/socialRelations_shehui"
+            android:background="@null"
+            android:gravity="center|right"
+            android:hint="请输入社会关系"
+            android:textColor="@color/text_9999"
+            android:textColorHint="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/com_left_right">
+
+        <TextView
+            android:id="@+id/socialRelations_shehuiPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical|left"
+            android:text="联系方式"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_30px" />
+
+        <ImageView
+            android:id="@+id/socialRelations_shehuiPhone_nextRightImg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/icon_dianhua" />
+
+        <EditText
+            android:id="@+id/socialRelations_shehuiPhone_Et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_toLeftOf="@id/socialRelations_shehuiPhone_nextRightImg"
+            android:layout_toRightOf="@id/socialRelations_shehuiPhone"
+            android:background="@null"
+            android:gravity="center|right"
+            android:hint="社会联系人手机号码"
+            android:textColor="@color/text_9999"
+            android:textColorHint="@color/text_9999"
+            android:textSize="@dimen/sp_30px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+
+    <TextView
+        android:id="@+id/socialRelations_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/height_40px"
+        android:layout_marginRight="@dimen/height_40px"
+        android:layout_marginTop="@dimen/height_80px"
+        android:background="@drawable/round_corner_gray"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_34px" />
+</LinearLayout>
